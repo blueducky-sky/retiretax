@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
     // [해결 포인트] 모델 이름을 명확히 지정하고 API 주소 체계를 정석대로 맞춤
     // 만약 flash가 안된다면 pro 모델을 대안으로 사용하도록 설정 가능
-    const MODEL_ID = "gemini-1.5-flash"; 
+    const MODEL_ID = "gemini-1.5-flash-latest"; 
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_ID}:generateContent?key=${API_KEY}`;
 
     const response = await fetch(API_URL, {

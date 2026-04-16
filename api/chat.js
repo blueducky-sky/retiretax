@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     // [최종 해결 포인트] 
     // 모델 경로를 v1beta/models/gemini-1.5-flash 로 정확히 타겟팅합니다.
     // 'gemini-flash-lite-latest' 같은 명칭은 특정 환경에서만 작동하므로 사용하지 않습니다.
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=${API_KEY}`;
 
     const response = await fetch(API_URL, {
       method: 'POST',

@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     }
 
     // [핵심 해결 포인트] v1beta 대신 v1 안정화 버전을 사용하고 모델명을 정확히 지정합니다.
-    const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-flash-lite-latest:generateContent?key=${API_KEY}`;
 
     const response = await fetch(API_URL, {
       method: 'POST',
